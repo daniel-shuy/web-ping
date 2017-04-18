@@ -1,23 +1,25 @@
 {
-  "name": "web-pingjs",
+  "name": "web-ping",
   "version": "1.0.0",
-  "description": "Allows you to ping remote URLs from within a web browser context",
-  "main": "ping.js",
+  "description": "JavaScript ping API for use in a web browser context.  Released under the BSD-3-Clause license, see  LICENSE.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel ./ping.js --out-file ./index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jdfreder/pingjs.git"
+    "url": "git+https://github.com/Runjuu/pingjs.git"
   },
-  "keywords": [
-    "ping",
-    "web"
-  ],
-  "author": "Jonathan Frederic",
+  "keywords": [],
+  "author": "Huang Runju",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/jdfreder/pingjs/issues"
+    "url": "https://github.com/Runjuu/pingjs/issues"
   },
-  "homepage": "https://github.com/jdfreder/pingjs#readme"
+  "homepage": "https://github.com/Runjuu/pingjs#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1"
+  }
 }
