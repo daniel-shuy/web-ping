@@ -8,23 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Runjuu/pingjs.git"
+    "url": "git+https://github.com/Runjuu/web-ping.git"
   },
   "keywords": [],
   "author": "Huang Runju",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/Runjuu/pingjs/issues"
+    "url": "https://github.com/Runjuu/web-ping/issues"
   },
-  "homepage": "https://github.com/Runjuu/pingjs#readme",
+  "homepage": "https://github.com/Runjuu/web-ping#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
-    "babel-polyfill": "^6.23.0",
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-stage-1": "^6.24.1"
-  },
-  "dependencies": {
-    "babel-plugin-transform-regenerator": "^6.24.1"
   }
 }
