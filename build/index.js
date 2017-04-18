@@ -18,18 +18,29 @@ var ping = function () {
         switch (_context.prev = _context.next) {
           case 0:
             start = new Date().getTime();
-            _context.next = 3;
+            _context.prev = 1;
+            _context.next = 4;
             return requestImage(url, timeout);
 
-          case 3:
+          case 4:
+            _context.next = 9;
+            break;
+
+          case 6:
+            _context.prev = 6;
+            _context.t0 = _context["catch"](1);
+
+            console.log(_context.t0);
+
+          case 9:
             return _context.abrupt("return", new Date().getTime() - start);
 
-          case 4:
+          case 10:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, this);
+    }, _callee, this, [[1, 6]]);
   }));
 
   return function ping(_x, _x2) {

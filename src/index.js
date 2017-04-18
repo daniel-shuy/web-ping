@@ -27,7 +27,12 @@ const requestImage = (url, timeout) => (new Promise(function(resolve, reject) {
 async function ping(url, timeout) {
   const start = (new Date()).getTime();
 
-  await requestImage(url, timeout);
+  try {
+    await requestImage(url, timeout);
+  } catch (err) {
+    console.log(err);
+  }
+
   return (new Date()).getTime() - start;
 }
 
