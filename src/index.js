@@ -2,12 +2,12 @@
 // Thanks to https://github.com/jdfreder/pingjs
 
 /**
-* Creates and loads an image element by url.
-* @param  {String} url
-* @param  {Number} timeout
-* @return {Promise} promise that resolves to an image element or
-*                   fails to an Error.
-*/
+ * Creates and loads an image element by url.
+ * @param  {String} url
+ * @param  {Number} timeout
+ * @return {Promise} promise that resolves to an image element or
+ *                   fails to an Error.
+ */
 const requestImage = (url, timeout) => (new Promise(function(resolve, reject) {
   const img = new Image();
   img.onload = resolve;
